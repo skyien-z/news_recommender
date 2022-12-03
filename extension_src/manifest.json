@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+  
+    "name": "News Recommender",
+    "description": "This extension recommends news articles from the current tweet.",
+    "version": "1.0",
+  
+    "background": {
+      "service_worker": "background.js"
+    },
+  
+    "permissions": [
+          "tabs",
+          "background",
+          "identity",
+          "notifications"
+      ],
+
+      "host_permissions": [
+        "https://www.twitter.com/*",
+        "http://127.0.0.1:8000/*"
+      ]
+  }
